@@ -1,13 +1,265 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Quicksand:wght@500&family=Sofia+Sans:ital@1&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  /* width: 100vw; */
+  font-size: 1.5rem;
+}
+
+/*Home Page*/
+.leftbox,
+.rightbox {
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 12px;
+  padding: 23px 23px;
+}
+
+.desc {
+  margin: 23px;
+  padding: 12px;
+  display: block;
+  justify-content: center;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 0.6em;
+}
+
+img {
+  width: 25vw;
+  height: inherit;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+  cursor: pointer;
+  background-color: olivedrab;
+}
+a:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid olivedrab;
+}
+
+/* NavBar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 21px;
+}
+nav a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75em;
+  background-color: transparent;
+}
+
+nav a:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.title {
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+}
+
+/* Web dev */
+
+.bimg {
+  width: 90vw;
+  margin: 23px 35px;
+}
+
+.webdev {
+  height: 100vh;
+  margin: 23px;
+}
+
+.webdev h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.webdev p {
+  display: flex;
+  font-family: "quicksand";
+}
+
+.webdev a {
+  background-color: olivedrab;
+}
+
+.webdev a:hover {
+  background-color: transparent;
+  border: 1px solid olivedrab;
+}
+
+/* iframes */
+iframe {
+  margin: 23px 23px;
+  width: 280px;
+  height: 155px;
+}
+
+/* HTML */
+.layout {
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 23px 23px;
+}
+
+.html-layout h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Websites */
+
+figure {
+  width: 25vw;
+}
+
+/* Machine Learning */
+
+.ml a {
+  background-color: olivedrab;
+}
+
+.ml a:hover {
+  background-color: transparent;
+  border: 1px solid olivedrab;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  img {
+    display: none;
+  }
+
+  .btns {
+    text-align: center;
+    margin: 2px;
+    width: 100vw;
+  }
+  .wnav {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1110px) {
+  .btns {
+    text-align: center;
+    margin: 2px;
+    width: 100vw;
+  }
+  .wnav {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1340px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  iframe {
+    width: 270px;
+  }
+  .reference a {
+    margin: 12px 12px;
+  }
+  .reference figcaption {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  .btns {
+    text-align: center;
+    margin: 2px;
+    width: 100vw;
+  }
+  .wnav {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    font-size: 16px;
+  }
+  nav {
+    display: block;
+    align-content: center;
+    justify-content: center;
+  }
+  nav a {
+    font-size: 11px;
+  }
+
+  /* Media Queries */
+}
+@media screen and (max-width: 350px) {
+  body {
+    width: 100vw;
+    margin: 0;
+  }
+  nav a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .btns {
+    width: 100vw;
+    margin: 1px;
+    padding: 4px;
+    font-size: 8px;
+  }
+  /* .iframes {
+    width: 100%;
+  } */
+  iframe {
+    width: 225px;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1080px) {
+  .mlnav {
+    display: flex;
+    flex-direction: column;
+  }
 }
