@@ -41,7 +41,7 @@ const Home = () => {
       />
       <Left
         src={
-          "http://calla.rnet.missouri.edu/cheng_courses/supervised_learning/supervised_learning_logo2.png"
+          "https://imgs.search.brave.com/3jpevtvX74_UE3WQfBdCJ1idCwxHqgPhLxisx56eIIs/rs:fit:857:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/dG1raktEZndMbi0x/VVNwa3QyNXB3SGFF/RyZwaWQ9QXBp"
         }
         desc={
           "Supervised classification is probably the most commonly used machine learning technique. As the name suggests it is “supervised”: It leverages a labeled training set to build up a logic, and then eventually uses that logic on unlabeled data"
