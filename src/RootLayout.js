@@ -1,20 +1,34 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const RootLayout = () => {
   return (
-    <div className="root-layout">
-      <header>
-        <nav>
-          <h1 className="title">LearnCode</h1>
-          <div className="links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink className={"web"} to="/webdev">
-              Web Development
-            </NavLink>
-            <NavLink to="/ml">Machine Learning</NavLink>
-          </div>
-        </nav>
-      </header>
+    <div>
+      <Navbar className="navbar" bg="transparent" expand="lg">
+        <Container>
+          <Navbar.Brand className="customNav" to="/">
+            <Link className="link" to="/">
+              <h1>LearnCode</h1>
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <NavLink className="customLink" to="/">
+                Home
+              </NavLink>
+              <NavLink className="customLink" to="/webdev">
+                Web Development
+              </NavLink>
+              <NavLink className="customLink" to="/ml">
+                Machine Learning
+              </NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <main>
         <Outlet />
       </main>
